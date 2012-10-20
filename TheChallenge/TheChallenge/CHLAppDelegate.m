@@ -8,7 +8,8 @@
 
 #import "CHLAppDelegate.h"
 #import "SCUI.h"
-#import "SCShareViewController.h"
+#import "SCAPI.h"
+#import "SCLoginViewController.h"
 
 @implementation CHLAppDelegate
 
@@ -16,13 +17,51 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+ + (void) initialize
+{
+    NSURL *url = [NSURL URLWithString:@"thechallenge://test"];
+    NSLog(@"URL:%@",url);
+    [SCSoundCloud setClientID:@"49f738b6e29c3b83f93e7cd81b20f624"
+                       secret:@"cd2945e194d9a65a3d8f42428db47add"
+                  redirectURL:url];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor underPageBackgroundColor];
+    vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(login)];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) login
+{
+    SCLoginViewControllerCompletionHandler handler = ^(NSError *error) {
+        if (SC_CANCELED(error)) {
+            NSLog(@"Canceled!");
+        } else if (error) {
+            NSLog(@"Error: %@", [error localizedDescription]);
+        } else {
+            NSLog(@"Done!");
+        }
+    };
+    
+    [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL) {
+        SCLoginViewController *loginViewController;
+        
+        loginViewController = [SCLoginViewController
+                               loginViewControllerWithPreparedURL:preparedURL
+                               completionHandler:handler];
+        UINavigationController *nav = (UINavigationController*)self.window.rootViewController;
+        [nav presentModalViewController:loginViewController animated:YES];
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
