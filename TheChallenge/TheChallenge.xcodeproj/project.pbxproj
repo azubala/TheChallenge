@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942B9BCE1632BC33004EC9D3 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */; };
+		942B9BD31632BCD2004EC9D3 /* CHLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */; };
 		94D94EC41630B3AD000BEF13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC31630B3AD000BEF13 /* UIKit.framework */; };
 		94D94EC61630B3AD000BEF13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC51630B3AD000BEF13 /* Foundation.framework */; };
 		94D94EC81630B3AD000BEF13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC71630B3AD000BEF13 /* CoreGraphics.framework */; };
@@ -26,7 +28,6 @@
 		94D94F601630B600000BEF13 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F5F1630B600000BEF13 /* CoreLocation.framework */; };
 		94D94F621630B606000BEF13 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F611630B606000BEF13 /* Security.framework */; };
 		94D94F641630B610000BEF13 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F631630B610000BEF13 /* CoreText.framework */; };
-		94D94F721630B6B1000BEF13 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 94D94F711630B6B1000BEF13 /* SoundCloud.bundle */; };
 		94D94F921630B8CE000BEF13 /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F8F1630B8B9000BEF13 /* libSoundCloudUI.a */; };
 		94D94FA11630BB32000BEF13 /* libOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F9E1630BB1F000BEF13 /* libOAuth2Client.a */; };
 		94D94FB61630BB9E000BEF13 /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94FAD1630BB52000BEF13 /* libSoundCloudAPI.a */; };
@@ -134,6 +135,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
+		942B9BD11632BCD2004EC9D3 /* CHLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLTableViewController.h; path = UI/CHLTableViewController.h; sourceTree = "<group>"; };
+		942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLTableViewController.m; path = UI/CHLTableViewController.m; sourceTree = "<group>"; };
 		94D94EBF1630B3AD000BEF13 /* TheChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D94EC31630B3AD000BEF13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94D94EC51630B3AD000BEF13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,7 +161,6 @@
 		94D94F5F1630B600000BEF13 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		94D94F611630B606000BEF13 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		94D94F631630B610000BEF13 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		94D94F711630B6B1000BEF13 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
 		94D94F861630B8B8000BEF13 /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudUI.xcodeproj; path = ../CocoaSoundCloudUI/SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
 		94D94F931630BB1F000BEF13 /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2Client.xcodeproj; path = ../OAuth2Client/OAuth2Client.xcodeproj; sourceTree = "<group>"; };
 		94D94FA21630BB51000BEF13 /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = ../CocoaSoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
@@ -189,6 +192,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942B9BCC1632BC33004EC9D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		942B9BCF1632BC43004EC9D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				942B9BD11632BCD2004EC9D3 /* CHLTableViewController.h */,
+				942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		942B9BD01632BC48004EC9D3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		94D94EB41630B3AD000BEF13 = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +258,12 @@
 		94D94ECB1630B3AD000BEF13 /* TheChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				94D94F711630B6B1000BEF13 /* SoundCloud.bundle */,
+				942B9BD01632BC48004EC9D3 /* UI */,
+				942B9BCF1632BC43004EC9D3 /* Common */,
 				94D94ED41630B3AD000BEF13 /* CHLAppDelegate.h */,
 				94D94ED51630B3AD000BEF13 /* CHLAppDelegate.m */,
 				94D94EDD1630B3AD000BEF13 /* TheChallenge.xcdatamodeld */,
+				942B9BCC1632BC33004EC9D3 /* Resources */,
 				94D94ECC1630B3AD000BEF13 /* Supporting Files */,
 			);
 			path = TheChallenge;
@@ -446,7 +475,7 @@
 				94D94ED81630B3AD000BEF13 /* Default.png in Resources */,
 				94D94EDA1630B3AD000BEF13 /* Default@2x.png in Resources */,
 				94D94EDC1630B3AD000BEF13 /* Default-568h@2x.png in Resources */,
-				94D94F721630B6B1000BEF13 /* SoundCloud.bundle in Resources */,
+				942B9BCE1632BC33004EC9D3 /* SoundCloud.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +489,7 @@
 				94D94ED21630B3AD000BEF13 /* main.m in Sources */,
 				94D94ED61630B3AD000BEF13 /* CHLAppDelegate.m in Sources */,
 				94D94EDF1630B3AD000BEF13 /* TheChallenge.xcdatamodeld in Sources */,
+				942B9BD31632BCD2004EC9D3 /* CHLTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
