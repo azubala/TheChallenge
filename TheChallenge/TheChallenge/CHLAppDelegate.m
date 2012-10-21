@@ -7,8 +7,7 @@
 //
 
 #import "CHLAppDelegate.h"
-#import "SCAPI.h"
-#import "CHLTableViewController.h"
+#import "CHLRootViewController.h"
 
 @implementation CHLAppDelegate
 
@@ -33,7 +32,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[CHLTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.window.rootViewController = [[CHLRootViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

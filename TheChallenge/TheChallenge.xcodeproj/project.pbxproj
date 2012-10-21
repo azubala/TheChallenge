@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		942B9BCE1632BC33004EC9D3 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */; };
-		942B9BD31632BCD2004EC9D3 /* CHLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */; };
+		942B9BD31632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */; };
+		942E10DC163467FF004ECCBD /* CHLUsersDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E10DB163467FF004ECCBD /* CHLUsersDataView.m */; };
+		942E10E416346CC7004ECCBD /* CHLViewScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E10E316346CC7004ECCBD /* CHLViewScroller.m */; };
 		94D94EC41630B3AD000BEF13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC31630B3AD000BEF13 /* UIKit.framework */; };
 		94D94EC61630B3AD000BEF13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC51630B3AD000BEF13 /* Foundation.framework */; };
 		94D94EC81630B3AD000BEF13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC71630B3AD000BEF13 /* CoreGraphics.framework */; };
@@ -31,6 +33,10 @@
 		94D94F921630B8CE000BEF13 /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F8F1630B8B9000BEF13 /* libSoundCloudUI.a */; };
 		94D94FA11630BB32000BEF13 /* libOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F9E1630BB1F000BEF13 /* libOAuth2Client.a */; };
 		94D94FB61630BB9E000BEF13 /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94FAD1630BB52000BEF13 /* libSoundCloudAPI.a */; };
+		94FC8F08163460F7006CECCF /* CHLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F07163460F7006CECCF /* CHLRootViewController.m */; };
+		94FC8F0B163463F8006CECCF /* CHLUsersDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */; };
+		94FC8F0E163464B4006CECCF /* CHLRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F0D163464B4006CECCF /* CHLRootView.m */; };
+		94FC8F1116346586006CECCF /* UILabel+MeasuringTextHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,8 +142,12 @@
 
 /* Begin PBXFileReference section */
 		942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
-		942B9BD11632BCD2004EC9D3 /* CHLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLTableViewController.h; path = UI/CHLTableViewController.h; sourceTree = "<group>"; };
-		942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLTableViewController.m; path = UI/CHLTableViewController.m; sourceTree = "<group>"; };
+		942B9BD11632BCD2004EC9D3 /* CHLSoundCloudTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLSoundCloudTableViewController.h; path = UI/CHLSoundCloudTableViewController.h; sourceTree = "<group>"; };
+		942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLSoundCloudTableViewController.m; path = UI/CHLSoundCloudTableViewController.m; sourceTree = "<group>"; };
+		942E10DA163467FF004ECCBD /* CHLUsersDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUsersDataView.h; path = UI/CHLUsersDataView.h; sourceTree = "<group>"; };
+		942E10DB163467FF004ECCBD /* CHLUsersDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUsersDataView.m; path = UI/CHLUsersDataView.m; sourceTree = "<group>"; };
+		942E10E216346CC7004ECCBD /* CHLViewScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLViewScroller.h; path = UI/CHLViewScroller.h; sourceTree = "<group>"; };
+		942E10E316346CC7004ECCBD /* CHLViewScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLViewScroller.m; path = UI/CHLViewScroller.m; sourceTree = "<group>"; };
 		94D94EBF1630B3AD000BEF13 /* TheChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D94EC31630B3AD000BEF13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94D94EC51630B3AD000BEF13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +174,15 @@
 		94D94F861630B8B8000BEF13 /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudUI.xcodeproj; path = ../CocoaSoundCloudUI/SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
 		94D94F931630BB1F000BEF13 /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2Client.xcodeproj; path = ../OAuth2Client/OAuth2Client.xcodeproj; sourceTree = "<group>"; };
 		94D94FA21630BB51000BEF13 /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = ../CocoaSoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		94FC8F0516345D20006CECCF /* CHLSoundCloudItemParserProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CHLSoundCloudItemParserProtocol.h; path = Common/CHLSoundCloudItemParserProtocol.h; sourceTree = "<group>"; };
+		94FC8F06163460F7006CECCF /* CHLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLRootViewController.h; path = UI/CHLRootViewController.h; sourceTree = "<group>"; };
+		94FC8F07163460F7006CECCF /* CHLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLRootViewController.m; path = UI/CHLRootViewController.m; sourceTree = "<group>"; };
+		94FC8F09163463F8006CECCF /* CHLUsersDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUsersDataViewController.h; path = UI/CHLUsersDataViewController.h; sourceTree = "<group>"; };
+		94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUsersDataViewController.m; path = UI/CHLUsersDataViewController.m; sourceTree = "<group>"; };
+		94FC8F0C163464B4006CECCF /* CHLRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLRootView.h; path = UI/CHLRootView.h; sourceTree = "<group>"; };
+		94FC8F0D163464B4006CECCF /* CHLRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLRootView.m; path = UI/CHLRootView.m; sourceTree = "<group>"; };
+		94FC8F0F16346586006CECCF /* UILabel+MeasuringTextHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+MeasuringTextHelpers.h"; path = "Common/UILabel+MeasuringTextHelpers.h"; sourceTree = "<group>"; };
+		94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MeasuringTextHelpers.m"; path = "Common/UILabel+MeasuringTextHelpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,8 +222,11 @@
 		942B9BCF1632BC43004EC9D3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				942B9BD11632BCD2004EC9D3 /* CHLTableViewController.h */,
-				942B9BD21632BCD2004EC9D3 /* CHLTableViewController.m */,
+				942B9BD11632BCD2004EC9D3 /* CHLSoundCloudTableViewController.h */,
+				942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */,
+				94FC8F0516345D20006CECCF /* CHLSoundCloudItemParserProtocol.h */,
+				94FC8F0F16346586006CECCF /* UILabel+MeasuringTextHelpers.h */,
+				94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -212,6 +234,16 @@
 		942B9BD01632BC48004EC9D3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				94FC8F06163460F7006CECCF /* CHLRootViewController.h */,
+				94FC8F07163460F7006CECCF /* CHLRootViewController.m */,
+				94FC8F09163463F8006CECCF /* CHLUsersDataViewController.h */,
+				94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */,
+				94FC8F0C163464B4006CECCF /* CHLRootView.h */,
+				94FC8F0D163464B4006CECCF /* CHLRootView.m */,
+				942E10DA163467FF004ECCBD /* CHLUsersDataView.h */,
+				942E10DB163467FF004ECCBD /* CHLUsersDataView.m */,
+				942E10E216346CC7004ECCBD /* CHLViewScroller.h */,
+				942E10E316346CC7004ECCBD /* CHLViewScroller.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -489,7 +521,13 @@
 				94D94ED21630B3AD000BEF13 /* main.m in Sources */,
 				94D94ED61630B3AD000BEF13 /* CHLAppDelegate.m in Sources */,
 				94D94EDF1630B3AD000BEF13 /* TheChallenge.xcdatamodeld in Sources */,
-				942B9BD31632BCD2004EC9D3 /* CHLTableViewController.m in Sources */,
+				942B9BD31632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m in Sources */,
+				94FC8F08163460F7006CECCF /* CHLRootViewController.m in Sources */,
+				94FC8F0B163463F8006CECCF /* CHLUsersDataViewController.m in Sources */,
+				94FC8F0E163464B4006CECCF /* CHLRootView.m in Sources */,
+				94FC8F1116346586006CECCF /* UILabel+MeasuringTextHelpers.m in Sources */,
+				942E10DC163467FF004ECCBD /* CHLUsersDataView.m in Sources */,
+				942E10E416346CC7004ECCBD /* CHLViewScroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

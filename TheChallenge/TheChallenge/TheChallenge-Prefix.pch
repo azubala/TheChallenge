@@ -12,4 +12,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+
+    #import "SCAPI.h"
+    #import "SCUI.h"
+
+    #import "UILabel+MeasuringTextHelpers.h"
+
 #endif
