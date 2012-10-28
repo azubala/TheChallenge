@@ -11,8 +11,9 @@
  **/
 
 #import <UIKit/UIKit.h>
+#import "CHLGradientView.h"
 
-@interface CHLRootView : UIView
+@interface CHLRootView : CHLGradientView
 {
     UIActivityIndicatorView *_spinner;
     UILabel *_infoLabel;

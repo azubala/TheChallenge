@@ -12,6 +12,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CHLSoundCloudItemParserProtocol.h"
+#import "CHLBaseCell.h"
 
 @interface CHLSoundCloudTableViewController : UITableViewController
 {
@@ -19,13 +20,10 @@
     id <CHLSoundCloudItemParserProtocol> _itemsParser;
     
     NSArray *_tableItems;
-    Class _tableViewCellClass;
 }
 
 @property (nonatomic, readonly)  NSURL *resourceURL;
 @property (nonatomic, readonly) id <CHLSoundCloudItemParserProtocol> itemsParser;
-
-@property (nonatomic) Class tableViewCellClass; // default is UITableViewCell, have to a subclass of that class, if not fallback to default
 
 // initializers
 - (id) initWithResourceURL:(NSURL*)resourceURL itemsParser:(id<CHLSoundCloudItemParserProtocol>)parser;

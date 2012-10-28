@@ -10,7 +10,7 @@
 
 @implementation UILabel (MeasuringTextHelpers)
 
-- (CGSize) sizeOfLabel:(UILabel*)aLabel constrainedToSize:(CGSize)constrainedSize
+- (CGSize) sizeOfLabelConstrainedToSize:(CGSize)constrainedSize
 {
     CGSize labelSize = CGSizeZero;
     if (self.text) {

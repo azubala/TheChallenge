@@ -10,6 +10,6 @@
 
 @interface UILabel (MeasuringTextHelpers)
 
-- (CGSize) sizeOfLabel:(UILabel*)aLabel constrainedToSize:(CGSize)constrainedSize;
+- (CGSize) sizeOfLabelConstrainedToSize:(CGSize)constrainedSize;
 
 @end

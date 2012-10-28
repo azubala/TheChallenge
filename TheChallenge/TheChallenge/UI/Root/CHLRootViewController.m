@@ -29,7 +29,10 @@
 
 - (void) loadView
 {
-    CHLRootView *rootView = [[CHLRootView alloc] initWithFrame:CGRectZero];
+    CHLRootView *rootView = [[CHLRootView alloc] initWithFrame:CGRectZero gradientColors:@[
+                                [UIColor colorWithRed:.7f green:.7f blue:.7f alpha:1.0f],
+                                [UIColor colorWithRed:.75f green:.75f blue:.75f alpha:1.0f]
+                             ]];
     [rootView.spinner  startAnimating];
     self.view = rootView;
 }
@@ -39,9 +42,9 @@
     [super viewDidAppear:animated];
 
     if ([SCSoundCloud account]) {
-        [self presentLoginViewController];
-    } else {
         [self presentUsersDataViewController];
+    } else {
+        [self presentLoginViewController];
     }
 
 }

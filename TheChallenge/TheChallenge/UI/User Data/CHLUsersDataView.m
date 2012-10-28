@@ -9,25 +9,21 @@
 #import "CHLUsersDataView.h"
 
 @implementation CHLUsersDataView
-@synthesize listsScroller = _listsScroller, pageControl = _pageControl, logoutButton = _logoutButton;
+@synthesize listsScroller = _listsScroller, logoutButton = _logoutButton;
 
 //---------------------------------------------------------------------------------------------
 #pragma mark - object life cycle
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame gradientColors:(NSArray *)colorsList
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame gradientColors:colorsList];
     if (self) {
         _listsScroller = [[CHLViewScroller alloc] initWithFrame:CGRectZero];
         [self addSubview:_listsScroller];
         
-        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectZero];
-        _pageControl.numberOfPages = 3;
-        _pageControl.backgroundColor = [UIColor lightGrayColor];
-        [self addSubview:_pageControl];
         
         _logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [self addSubview:_logoutButton];
+
     }
     return self;
 }
@@ -43,10 +39,6 @@
     _listsScroller.frame = self.bounds;
     
     CGPoint pos = CGPointZero;
-    CGSize pageControllerSize = CGSizeMake(viewSize.width, 40.0f);
-    pos.y = viewSize.height - pageControllerSize.height;
-    _pageControl.frame = CGRectMake(pos.x, pos.y, pageControllerSize.width, pageControllerSize.height);
-    
     CGSize buttonSize = CGSizeMake(40.0f, 40.0f);
     pos.x = viewSize.width - buttonSize.width;
     pos.y = 0.0f;

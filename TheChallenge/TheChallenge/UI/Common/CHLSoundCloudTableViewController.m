@@ -7,10 +7,10 @@
 //
 
 #import "CHLSoundCloudTableViewController.h"
+#import "CHLGradientView.h"
 
 @implementation CHLSoundCloudTableViewController
 @synthesize resourceURL = _resourceURL, itemsParser = _itemsParser;
-@synthesize tableViewCellClass = _tableViewCellClass;
 
 //---------------------------------------------------------------------------------------------
 #pragma mark - object life cycle
@@ -21,7 +21,6 @@
     if (self) {
         _resourceURL = resourceURL;
         _itemsParser = parser;
-        _tableViewCellClass = [UITableViewCell class];
     }
     return self;
 }
@@ -37,6 +36,12 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.tableView.backgroundView = [[CHLGradientView alloc] initWithFrame:CGRectZero gradientColors:@[
+                                        [UIColor colorWithRed:.7f green:.7f blue:.7f alpha:1.0f],
+                                        [UIColor colorWithRed:.75f green:.75f blue:.75f alpha:1.0f]
+                                     ]];
     [self fetchDataSource];
 }
 
@@ -79,18 +84,25 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;//[_tableItems count];
+    return [_tableItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CHLBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        cell = [[_tableViewCellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[CHLBaseCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = @"Test";
     return cell;
+}
+
+//---------------------------------------------------------------------------------------------
+#pragma mark - table view delegate
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90.0f;
 }
 
 @end

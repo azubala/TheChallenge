@@ -14,10 +14,11 @@
 //---------------------------------------------------------------------------------------------
 #pragma mark - object life cycle
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame gradientColors:(NSArray *)colorsList
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame gradientColors:colorsList];
     if (self) {
+
         _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [_spinner setHidesWhenStopped:YES];
         [self addSubview:_spinner];

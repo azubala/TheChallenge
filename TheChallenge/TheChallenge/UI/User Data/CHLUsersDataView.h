@@ -8,16 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "CHLViewScroller.h"
+#import "CHLGradientView.h"
 
-@interface CHLUsersDataView : UIView
+@interface CHLUsersDataView : CHLGradientView
 {
     CHLViewScroller *_listsScroller;
-    UIPageControl *_pageControl;
     UIButton *_logoutButton;
 }
 
 @property (nonatomic, readonly) CHLViewScroller *listsScroller;
-@property (nonatomic, readonly) UIPageControl *pageControl;
 @property (nonatomic, readonly) UIButton *logoutButton;
 
 

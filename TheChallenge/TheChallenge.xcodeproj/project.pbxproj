@@ -8,9 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		942B9BCE1632BC33004EC9D3 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */; };
-		942B9BD31632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */; };
-		942E10DC163467FF004ECCBD /* CHLUsersDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E10DB163467FF004ECCBD /* CHLUsersDataView.m */; };
-		942E10E416346CC7004ECCBD /* CHLViewScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E10E316346CC7004ECCBD /* CHLViewScroller.m */; };
+		94410F33163D501500D5EABC /* CHLSoundCloudTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F24163D501500D5EABC /* CHLSoundCloudTableViewController.m */; };
+		94410F36163D501500D5EABC /* CHLRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F2B163D501500D5EABC /* CHLRootView.m */; };
+		94410F37163D501500D5EABC /* CHLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F2D163D501500D5EABC /* CHLRootViewController.m */; };
+		94410F38163D501500D5EABC /* CHLUsersDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F30163D501500D5EABC /* CHLUsersDataView.m */; };
+		94410F39163D501500D5EABC /* CHLUsersDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F32163D501500D5EABC /* CHLUsersDataViewController.m */; };
+		94410F3D163D508100D5EABC /* CHLTracksParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F3C163D508100D5EABC /* CHLTracksParser.m */; };
+		94410F41163D516200D5EABC /* CHLBaseModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F40163D516200D5EABC /* CHLBaseModelObject.m */; };
+		94410F47163D537300D5EABC /* CHLTrackObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F46163D537300D5EABC /* CHLTrackObject.m */; };
+		94410F4A163D56BA00D5EABC /* CHLURLFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F49163D56BA00D5EABC /* CHLURLFactory.m */; };
+		94410F4D163D5D7200D5EABC /* CHLViewScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F4C163D5D7200D5EABC /* CHLViewScroller.m */; };
+		94410F59163D610300D5EABC /* CHLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F54163D610300D5EABC /* CHLBaseCell.m */; };
+		94410F5A163D610300D5EABC /* UILabel+MeasuringTextHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F57163D610300D5EABC /* UILabel+MeasuringTextHelpers.m */; };
+		94410F5D163D615D00D5EABC /* CHLGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F5C163D615D00D5EABC /* CHLGradientView.m */; };
+		94410F64163D685300D5EABC /* CHLUsersTracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F63163D685300D5EABC /* CHLUsersTracksViewController.m */; };
+		94410F67163D686900D5EABC /* CHLUsersFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F66163D686900D5EABC /* CHLUsersFavoritesViewController.m */; };
+		94410F6A163D688000D5EABC /* CHLUsersFollowingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F69163D688000D5EABC /* CHLUsersFollowingsViewController.m */; };
+		94410F70163D806E00D5EABC /* CHLUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F6F163D806E00D5EABC /* CHLUsersParser.m */; };
+		94410F73163D80AC00D5EABC /* CHLUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F72163D80AC00D5EABC /* CHLUserObject.m */; };
+		94410F76163D86F900D5EABC /* CHLTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F75163D86F900D5EABC /* CHLTrackCell.m */; };
+		94410F84163D8F6000D5EABC /* CHLDownloaderQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F7E163D8F6000D5EABC /* CHLDownloaderQueue.m */; };
+		94410F85163D8F6000D5EABC /* CHLNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F81163D8F6000D5EABC /* CHLNetworkHandler.m */; };
+		94410F86163D8F6000D5EABC /* CHLImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 94410F83163D8F6000D5EABC /* CHLImageProvider.m */; };
 		94D94EC41630B3AD000BEF13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC31630B3AD000BEF13 /* UIKit.framework */; };
 		94D94EC61630B3AD000BEF13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC51630B3AD000BEF13 /* Foundation.framework */; };
 		94D94EC81630B3AD000BEF13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94EC71630B3AD000BEF13 /* CoreGraphics.framework */; };
@@ -33,10 +52,6 @@
 		94D94F921630B8CE000BEF13 /* libSoundCloudUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F8F1630B8B9000BEF13 /* libSoundCloudUI.a */; };
 		94D94FA11630BB32000BEF13 /* libOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94F9E1630BB1F000BEF13 /* libOAuth2Client.a */; };
 		94D94FB61630BB9E000BEF13 /* libSoundCloudAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D94FAD1630BB52000BEF13 /* libSoundCloudAPI.a */; };
-		94FC8F08163460F7006CECCF /* CHLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F07163460F7006CECCF /* CHLRootViewController.m */; };
-		94FC8F0B163463F8006CECCF /* CHLUsersDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */; };
-		94FC8F0E163464B4006CECCF /* CHLRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F0D163464B4006CECCF /* CHLRootView.m */; };
-		94FC8F1116346586006CECCF /* UILabel+MeasuringTextHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,12 +157,51 @@
 
 /* Begin PBXFileReference section */
 		942B9BCD1632BC33004EC9D3 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
-		942B9BD11632BCD2004EC9D3 /* CHLSoundCloudTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLSoundCloudTableViewController.h; path = UI/CHLSoundCloudTableViewController.h; sourceTree = "<group>"; };
-		942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLSoundCloudTableViewController.m; path = UI/CHLSoundCloudTableViewController.m; sourceTree = "<group>"; };
-		942E10DA163467FF004ECCBD /* CHLUsersDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUsersDataView.h; path = UI/CHLUsersDataView.h; sourceTree = "<group>"; };
-		942E10DB163467FF004ECCBD /* CHLUsersDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUsersDataView.m; path = UI/CHLUsersDataView.m; sourceTree = "<group>"; };
-		942E10E216346CC7004ECCBD /* CHLViewScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLViewScroller.h; path = UI/CHLViewScroller.h; sourceTree = "<group>"; };
-		942E10E316346CC7004ECCBD /* CHLViewScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLViewScroller.m; path = UI/CHLViewScroller.m; sourceTree = "<group>"; };
+		94410F20163D501500D5EABC /* CHLSoundCloudItemParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLSoundCloudItemParserProtocol.h; sourceTree = "<group>"; };
+		94410F23163D501500D5EABC /* CHLSoundCloudTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLSoundCloudTableViewController.h; sourceTree = "<group>"; };
+		94410F24163D501500D5EABC /* CHLSoundCloudTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLSoundCloudTableViewController.m; sourceTree = "<group>"; };
+		94410F2A163D501500D5EABC /* CHLRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLRootView.h; sourceTree = "<group>"; };
+		94410F2B163D501500D5EABC /* CHLRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLRootView.m; sourceTree = "<group>"; };
+		94410F2C163D501500D5EABC /* CHLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLRootViewController.h; sourceTree = "<group>"; };
+		94410F2D163D501500D5EABC /* CHLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLRootViewController.m; sourceTree = "<group>"; };
+		94410F2F163D501500D5EABC /* CHLUsersDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLUsersDataView.h; sourceTree = "<group>"; };
+		94410F30163D501500D5EABC /* CHLUsersDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLUsersDataView.m; sourceTree = "<group>"; };
+		94410F31163D501500D5EABC /* CHLUsersDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLUsersDataViewController.h; sourceTree = "<group>"; };
+		94410F32163D501500D5EABC /* CHLUsersDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLUsersDataViewController.m; sourceTree = "<group>"; };
+		94410F3B163D508100D5EABC /* CHLTracksParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLTracksParser.h; path = Parsers/CHLTracksParser.h; sourceTree = "<group>"; };
+		94410F3C163D508100D5EABC /* CHLTracksParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLTracksParser.m; path = Parsers/CHLTracksParser.m; sourceTree = "<group>"; };
+		94410F3F163D516200D5EABC /* CHLBaseModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLBaseModelObject.h; path = Objects/CHLBaseModelObject.h; sourceTree = "<group>"; };
+		94410F40163D516200D5EABC /* CHLBaseModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLBaseModelObject.m; path = Objects/CHLBaseModelObject.m; sourceTree = "<group>"; };
+		94410F45163D537300D5EABC /* CHLTrackObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLTrackObject.h; path = Objects/CHLTrackObject.h; sourceTree = "<group>"; };
+		94410F46163D537300D5EABC /* CHLTrackObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLTrackObject.m; path = Objects/CHLTrackObject.m; sourceTree = "<group>"; };
+		94410F48163D56BA00D5EABC /* CHLURLFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLURLFactory.h; sourceTree = "<group>"; };
+		94410F49163D56BA00D5EABC /* CHLURLFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLURLFactory.m; sourceTree = "<group>"; };
+		94410F4C163D5D7200D5EABC /* CHLViewScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLViewScroller.m; sourceTree = "<group>"; };
+		94410F53163D610300D5EABC /* CHLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLBaseCell.h; sourceTree = "<group>"; };
+		94410F54163D610300D5EABC /* CHLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLBaseCell.m; sourceTree = "<group>"; };
+		94410F56163D610300D5EABC /* UILabel+MeasuringTextHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MeasuringTextHelpers.h"; sourceTree = "<group>"; };
+		94410F57163D610300D5EABC /* UILabel+MeasuringTextHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MeasuringTextHelpers.m"; sourceTree = "<group>"; };
+		94410F58163D610300D5EABC /* CHLViewScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLViewScroller.h; sourceTree = "<group>"; };
+		94410F5B163D615D00D5EABC /* CHLGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLGradientView.h; sourceTree = "<group>"; };
+		94410F5C163D615D00D5EABC /* CHLGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLGradientView.m; sourceTree = "<group>"; };
+		94410F62163D685300D5EABC /* CHLUsersTracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLUsersTracksViewController.h; sourceTree = "<group>"; };
+		94410F63163D685300D5EABC /* CHLUsersTracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLUsersTracksViewController.m; sourceTree = "<group>"; };
+		94410F65163D686900D5EABC /* CHLUsersFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLUsersFavoritesViewController.h; sourceTree = "<group>"; };
+		94410F66163D686900D5EABC /* CHLUsersFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLUsersFavoritesViewController.m; sourceTree = "<group>"; };
+		94410F68163D688000D5EABC /* CHLUsersFollowingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLUsersFollowingsViewController.h; sourceTree = "<group>"; };
+		94410F69163D688000D5EABC /* CHLUsersFollowingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLUsersFollowingsViewController.m; sourceTree = "<group>"; };
+		94410F6E163D806E00D5EABC /* CHLUsersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUsersParser.h; path = Parsers/CHLUsersParser.h; sourceTree = "<group>"; };
+		94410F6F163D806E00D5EABC /* CHLUsersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUsersParser.m; path = Parsers/CHLUsersParser.m; sourceTree = "<group>"; };
+		94410F71163D80AC00D5EABC /* CHLUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUserObject.h; path = Objects/CHLUserObject.h; sourceTree = "<group>"; };
+		94410F72163D80AC00D5EABC /* CHLUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUserObject.m; path = Objects/CHLUserObject.m; sourceTree = "<group>"; };
+		94410F74163D86F900D5EABC /* CHLTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLTrackCell.h; sourceTree = "<group>"; };
+		94410F75163D86F900D5EABC /* CHLTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLTrackCell.m; sourceTree = "<group>"; };
+		94410F7D163D8F6000D5EABC /* CHLDownloaderQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLDownloaderQueue.h; sourceTree = "<group>"; };
+		94410F7E163D8F6000D5EABC /* CHLDownloaderQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLDownloaderQueue.m; sourceTree = "<group>"; };
+		94410F80163D8F6000D5EABC /* CHLNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLNetworkHandler.h; sourceTree = "<group>"; };
+		94410F81163D8F6000D5EABC /* CHLNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLNetworkHandler.m; sourceTree = "<group>"; };
+		94410F82163D8F6000D5EABC /* CHLImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLImageProvider.h; sourceTree = "<group>"; };
+		94410F83163D8F6000D5EABC /* CHLImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLImageProvider.m; sourceTree = "<group>"; };
 		94D94EBF1630B3AD000BEF13 /* TheChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D94EC31630B3AD000BEF13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94D94EC51630B3AD000BEF13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,15 +228,6 @@
 		94D94F861630B8B8000BEF13 /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudUI.xcodeproj; path = ../CocoaSoundCloudUI/SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
 		94D94F931630BB1F000BEF13 /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2Client.xcodeproj; path = ../OAuth2Client/OAuth2Client.xcodeproj; sourceTree = "<group>"; };
 		94D94FA21630BB51000BEF13 /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SoundCloudAPI.xcodeproj; path = ../CocoaSoundCloudAPI/SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
-		94FC8F0516345D20006CECCF /* CHLSoundCloudItemParserProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CHLSoundCloudItemParserProtocol.h; path = Common/CHLSoundCloudItemParserProtocol.h; sourceTree = "<group>"; };
-		94FC8F06163460F7006CECCF /* CHLRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLRootViewController.h; path = UI/CHLRootViewController.h; sourceTree = "<group>"; };
-		94FC8F07163460F7006CECCF /* CHLRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLRootViewController.m; path = UI/CHLRootViewController.m; sourceTree = "<group>"; };
-		94FC8F09163463F8006CECCF /* CHLUsersDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLUsersDataViewController.h; path = UI/CHLUsersDataViewController.h; sourceTree = "<group>"; };
-		94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLUsersDataViewController.m; path = UI/CHLUsersDataViewController.m; sourceTree = "<group>"; };
-		94FC8F0C163464B4006CECCF /* CHLRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLRootView.h; path = UI/CHLRootView.h; sourceTree = "<group>"; };
-		94FC8F0D163464B4006CECCF /* CHLRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLRootView.m; path = UI/CHLRootView.m; sourceTree = "<group>"; };
-		94FC8F0F16346586006CECCF /* UILabel+MeasuringTextHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+MeasuringTextHelpers.h"; path = "Common/UILabel+MeasuringTextHelpers.h"; sourceTree = "<group>"; };
-		94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MeasuringTextHelpers.m"; path = "Common/UILabel+MeasuringTextHelpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,33 +264,158 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		942B9BCF1632BC43004EC9D3 /* Common */ = {
+		94410F1F163D501500D5EABC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				942B9BD11632BCD2004EC9D3 /* CHLSoundCloudTableViewController.h */,
-				942B9BD21632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m */,
-				94FC8F0516345D20006CECCF /* CHLSoundCloudItemParserProtocol.h */,
-				94FC8F0F16346586006CECCF /* UILabel+MeasuringTextHelpers.h */,
-				94FC8F1016346586006CECCF /* UILabel+MeasuringTextHelpers.m */,
+				94410F3E163D511E00D5EABC /* Objects */,
+				94410F3A163D506600D5EABC /* Parsers */,
+				94410F20163D501500D5EABC /* CHLSoundCloudItemParserProtocol.h */,
+				94410F48163D56BA00D5EABC /* CHLURLFactory.h */,
+				94410F49163D56BA00D5EABC /* CHLURLFactory.m */,
 			);
-			name = Common;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		942B9BD01632BC48004EC9D3 /* UI */ = {
+		94410F21163D501500D5EABC /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				94FC8F06163460F7006CECCF /* CHLRootViewController.h */,
-				94FC8F07163460F7006CECCF /* CHLRootViewController.m */,
-				94FC8F09163463F8006CECCF /* CHLUsersDataViewController.h */,
-				94FC8F0A163463F8006CECCF /* CHLUsersDataViewController.m */,
-				94FC8F0C163464B4006CECCF /* CHLRootView.h */,
-				94FC8F0D163464B4006CECCF /* CHLRootView.m */,
-				942E10DA163467FF004ECCBD /* CHLUsersDataView.h */,
-				942E10DB163467FF004ECCBD /* CHLUsersDataView.m */,
-				942E10E216346CC7004ECCBD /* CHLViewScroller.h */,
-				942E10E316346CC7004ECCBD /* CHLViewScroller.m */,
+				94410F22163D501500D5EABC /* Common */,
+				94410F29163D501500D5EABC /* Root */,
+				94410F2E163D501500D5EABC /* User Data */,
 			);
-			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		94410F22163D501500D5EABC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				94410F58163D610300D5EABC /* CHLViewScroller.h */,
+				94410F4C163D5D7200D5EABC /* CHLViewScroller.m */,
+				94410F23163D501500D5EABC /* CHLSoundCloudTableViewController.h */,
+				94410F24163D501500D5EABC /* CHLSoundCloudTableViewController.m */,
+				94410F52163D610200D5EABC /* Base Cell */,
+				94410F55163D610300D5EABC /* Categories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		94410F29163D501500D5EABC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				94410F2A163D501500D5EABC /* CHLRootView.h */,
+				94410F2B163D501500D5EABC /* CHLRootView.m */,
+				94410F2C163D501500D5EABC /* CHLRootViewController.h */,
+				94410F2D163D501500D5EABC /* CHLRootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		94410F2E163D501500D5EABC /* User Data */ = {
+			isa = PBXGroup;
+			children = (
+				94410F2F163D501500D5EABC /* CHLUsersDataView.h */,
+				94410F30163D501500D5EABC /* CHLUsersDataView.m */,
+				94410F31163D501500D5EABC /* CHLUsersDataViewController.h */,
+				94410F32163D501500D5EABC /* CHLUsersDataViewController.m */,
+				94410F61163D685300D5EABC /* User Content */,
+			);
+			path = "User Data";
+			sourceTree = "<group>";
+		};
+		94410F3A163D506600D5EABC /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				94410F3B163D508100D5EABC /* CHLTracksParser.h */,
+				94410F3C163D508100D5EABC /* CHLTracksParser.m */,
+				94410F6E163D806E00D5EABC /* CHLUsersParser.h */,
+				94410F6F163D806E00D5EABC /* CHLUsersParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		94410F3E163D511E00D5EABC /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				94410F3F163D516200D5EABC /* CHLBaseModelObject.h */,
+				94410F40163D516200D5EABC /* CHLBaseModelObject.m */,
+				94410F45163D537300D5EABC /* CHLTrackObject.h */,
+				94410F46163D537300D5EABC /* CHLTrackObject.m */,
+				94410F71163D80AC00D5EABC /* CHLUserObject.h */,
+				94410F72163D80AC00D5EABC /* CHLUserObject.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		94410F52163D610200D5EABC /* Base Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94410F53163D610300D5EABC /* CHLBaseCell.h */,
+				94410F54163D610300D5EABC /* CHLBaseCell.m */,
+				94410F5B163D615D00D5EABC /* CHLGradientView.h */,
+				94410F5C163D615D00D5EABC /* CHLGradientView.m */,
+				94410F74163D86F900D5EABC /* CHLTrackCell.h */,
+				94410F75163D86F900D5EABC /* CHLTrackCell.m */,
+			);
+			path = "Base Cell";
+			sourceTree = "<group>";
+		};
+		94410F55163D610300D5EABC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				94410F56163D610300D5EABC /* UILabel+MeasuringTextHelpers.h */,
+				94410F57163D610300D5EABC /* UILabel+MeasuringTextHelpers.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		94410F61163D685300D5EABC /* User Content */ = {
+			isa = PBXGroup;
+			children = (
+				94410F65163D686900D5EABC /* CHLUsersFavoritesViewController.h */,
+				94410F66163D686900D5EABC /* CHLUsersFavoritesViewController.m */,
+				94410F62163D685300D5EABC /* CHLUsersTracksViewController.h */,
+				94410F63163D685300D5EABC /* CHLUsersTracksViewController.m */,
+				94410F68163D688000D5EABC /* CHLUsersFollowingsViewController.h */,
+				94410F69163D688000D5EABC /* CHLUsersFollowingsViewController.m */,
+			);
+			path = "User Content";
+			sourceTree = "<group>";
+		};
+		94410F7A163D8F5F00D5EABC /* Image Provider */ = {
+			isa = PBXGroup;
+			children = (
+				94410F7B163D8F6000D5EABC /* Networking */,
+				94410F82163D8F6000D5EABC /* CHLImageProvider.h */,
+				94410F83163D8F6000D5EABC /* CHLImageProvider.m */,
+			);
+			path = "Image Provider";
+			sourceTree = "<group>";
+		};
+		94410F7B163D8F6000D5EABC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				94410F7C163D8F6000D5EABC /* Downloader Queue */,
+				94410F7F163D8F6000D5EABC /* NetworkHandler */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		94410F7C163D8F6000D5EABC /* Downloader Queue */ = {
+			isa = PBXGroup;
+			children = (
+				94410F7D163D8F6000D5EABC /* CHLDownloaderQueue.h */,
+				94410F7E163D8F6000D5EABC /* CHLDownloaderQueue.m */,
+			);
+			path = "Downloader Queue";
+			sourceTree = "<group>";
+		};
+		94410F7F163D8F6000D5EABC /* NetworkHandler */ = {
+			isa = PBXGroup;
+			children = (
+				94410F80163D8F6000D5EABC /* CHLNetworkHandler.h */,
+				94410F81163D8F6000D5EABC /* CHLNetworkHandler.m */,
+			);
+			path = NetworkHandler;
 			sourceTree = "<group>";
 		};
 		94D94EB41630B3AD000BEF13 = {
@@ -290,8 +460,9 @@
 		94D94ECB1630B3AD000BEF13 /* TheChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				942B9BD01632BC48004EC9D3 /* UI */,
-				942B9BCF1632BC43004EC9D3 /* Common */,
+				94410F7A163D8F5F00D5EABC /* Image Provider */,
+				94410F1F163D501500D5EABC /* Model */,
+				94410F21163D501500D5EABC /* UI */,
 				94D94ED41630B3AD000BEF13 /* CHLAppDelegate.h */,
 				94D94ED51630B3AD000BEF13 /* CHLAppDelegate.m */,
 				94D94EDD1630B3AD000BEF13 /* TheChallenge.xcdatamodeld */,
@@ -521,13 +692,28 @@
 				94D94ED21630B3AD000BEF13 /* main.m in Sources */,
 				94D94ED61630B3AD000BEF13 /* CHLAppDelegate.m in Sources */,
 				94D94EDF1630B3AD000BEF13 /* TheChallenge.xcdatamodeld in Sources */,
-				942B9BD31632BCD2004EC9D3 /* CHLSoundCloudTableViewController.m in Sources */,
-				94FC8F08163460F7006CECCF /* CHLRootViewController.m in Sources */,
-				94FC8F0B163463F8006CECCF /* CHLUsersDataViewController.m in Sources */,
-				94FC8F0E163464B4006CECCF /* CHLRootView.m in Sources */,
-				94FC8F1116346586006CECCF /* UILabel+MeasuringTextHelpers.m in Sources */,
-				942E10DC163467FF004ECCBD /* CHLUsersDataView.m in Sources */,
-				942E10E416346CC7004ECCBD /* CHLViewScroller.m in Sources */,
+				94410F33163D501500D5EABC /* CHLSoundCloudTableViewController.m in Sources */,
+				94410F36163D501500D5EABC /* CHLRootView.m in Sources */,
+				94410F37163D501500D5EABC /* CHLRootViewController.m in Sources */,
+				94410F38163D501500D5EABC /* CHLUsersDataView.m in Sources */,
+				94410F39163D501500D5EABC /* CHLUsersDataViewController.m in Sources */,
+				94410F3D163D508100D5EABC /* CHLTracksParser.m in Sources */,
+				94410F41163D516200D5EABC /* CHLBaseModelObject.m in Sources */,
+				94410F47163D537300D5EABC /* CHLTrackObject.m in Sources */,
+				94410F4A163D56BA00D5EABC /* CHLURLFactory.m in Sources */,
+				94410F4D163D5D7200D5EABC /* CHLViewScroller.m in Sources */,
+				94410F59163D610300D5EABC /* CHLBaseCell.m in Sources */,
+				94410F5A163D610300D5EABC /* UILabel+MeasuringTextHelpers.m in Sources */,
+				94410F5D163D615D00D5EABC /* CHLGradientView.m in Sources */,
+				94410F64163D685300D5EABC /* CHLUsersTracksViewController.m in Sources */,
+				94410F67163D686900D5EABC /* CHLUsersFavoritesViewController.m in Sources */,
+				94410F6A163D688000D5EABC /* CHLUsersFollowingsViewController.m in Sources */,
+				94410F70163D806E00D5EABC /* CHLUsersParser.m in Sources */,
+				94410F73163D80AC00D5EABC /* CHLUserObject.m in Sources */,
+				94410F76163D86F900D5EABC /* CHLTrackCell.m in Sources */,
+				94410F84163D8F6000D5EABC /* CHLDownloaderQueue.m in Sources */,
+				94410F85163D8F6000D5EABC /* CHLNetworkHandler.m in Sources */,
+				94410F86163D8F6000D5EABC /* CHLImageProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
