@@ -8,6 +8,8 @@
 
 #import "CHLBaseModelObject.h"
 
+NSDateFormatter *staticDateFormater_;
+
 @implementation CHLBaseModelObject
 
 //---------------------------------------------------------------------------------------------
@@ -16,7 +18,21 @@
 - (void) parseDataFromDictionary:(NSDictionary*)dictionary
 {
     self.objectId = dictionary[@"id"];
-    self.creationDate = dictionary[@"created_at"];
+    
+    NSString *dateString = dictionary[@"created_at"];
+    self.creationDate = [[CHLBaseModelObject dateFormatter] dateFromString:dateString];
+}
+
+//---------------------------------------------------------------------------------------------
+#pragma mark - date formater
+
++ (NSDateFormatter*) dateFormatter
+{
+    if (!staticDateFormater_) {
+        staticDateFormater_ = [[NSDateFormatter alloc] init];
+        [staticDateFormater_ setDateFormat:@"yyyy/MM/dd HH:mm:ss ZZZ"];
+    }
+    return staticDateFormater_;
 }
 
 @end

@@ -12,6 +12,25 @@
 #import "CHLImageProvider.h"
 
 @implementation CHLUsersFavoritesViewController
+{
+    NSDateFormatter *dateFormatter_;
+}
+
+//---------------------------------------------------------------------------------------------
+#pragma mark - object life cycle
+
+- (id)initWithResourceURL:(NSURL *)resourceURL itemsParser:(id<CHLSoundCloudItemParserProtocol>)parser
+{
+    self = [super initWithResourceURL:resourceURL itemsParser:parser];
+    if (self) {
+        dateFormatter_ = [[NSDateFormatter alloc] init];
+        [dateFormatter_ setDateFormat:@"dd/MM/yyyy (HH:mm)"];
+    }
+    return self;
+}
+
+//---------------------------------------------------------------------------------------------
+#pragma mark - UIViewController specific
 
 - (NSString*) title
 {
@@ -29,7 +48,8 @@
         cell = [[CHLTrackCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableCellId];
     }
     CHLTrackObject *track = [_tableItems objectAtIndex:indexPath.row];
-    cell.dateLabel.text = [track.creationDate description];
+    cell.dateLabel.text = [dateFormatter_ stringFromDate:track.creationDate];
+    //cell.dateLabel.text = [track.creationDate description];
     cell.titleLabel.text = track.title;
     cell.artistLabel.text = track.author.username;
     cell.currentModelObject = track;
