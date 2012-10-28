@@ -30,6 +30,7 @@
         [self addSubview:_scrollView];
         
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectZero];
+        _pageControl.defersCurrentPageDisplay = YES;
         _pageControl.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:.3f];
         [self addSubview:_pageControl];
         
@@ -42,6 +43,7 @@
         [self addSubview:_titleLabel];
         
         _rightButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [_rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_rightButton setTitle:@"Logout" forState:UIControlStateNormal];
         [self addSubview:_rightButton];
     }
