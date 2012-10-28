@@ -15,7 +15,7 @@
 + (id) defaultProvider;
 
 // provider methods
-- (void) imageWithURL:(NSURL*)imageURL scale:(CGFloat)scale completionBlock:(void(^)(BOOL success,UIImage *image))completionBlock;
+- (void) imageWithURL:(NSURL*)imageURL scale:(CGFloat)scale crop:(BOOL)crop completionBlock:(void(^)(BOOL success,UIImage *image))completionBlock;
 
 - (void) cancelDownloadForURL:(NSURL*)imageURL;
 

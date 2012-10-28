@@ -71,7 +71,7 @@ static CHLImageProvider *defaultProvider_;
     return retImage;
 }
 
-- (void) imageWithURL:(NSURL*)imageURL scale:(CGFloat)scale completionBlock:(void(^)(BOOL success,UIImage *image))completionBlock
+- (void) imageWithURL:(NSURL*)imageURL scale:(CGFloat)scale crop:(BOOL)crop completionBlock:(void(^)(BOOL success,UIImage *image))completionBlock
 {
     if (!imageURL) {
         completionBlock(NO,nil);
@@ -86,15 +86,28 @@ static CHLImageProvider *defaultProvider_;
         [self addObjectDownloadWithURL:imageURL fileNameInDocuments:imageFullPath withCompletionBlock:^(BOOL success, NSString *filePath) {
             
             UIImage *image = [provider imageFromPath:filePath];
+            BOOL needToSave = NO;
+            if (crop){
+                needToSave = YES;
+                CGRect imageRect = CGRectMake(0.0f, 0.0f, image.size.width, image.size.height/2);
+                CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], imageRect);
+                image = [UIImage imageWithCGImage:imageRef];
+                CGImageRelease(imageRef);
+            }
+            
             if (scale != 1.0f && scale != 0.0f) {
+                needToSave = YES;
                 CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
                 CGSize scaledSize = CGSizeApplyAffineTransform(image.size, scaleTransform);
                 UIGraphicsBeginImageContext(scaledSize);
                 [image drawInRect:CGRectMake(0.0, 0.0, scaledSize.width, scaledSize.height)];
                 image = UIGraphicsGetImageFromCurrentImageContext();
                 UIGraphicsEndImageContext();
-                [UIImagePNGRepresentation(image) writeToFile:filePath atomically:NO];
             }
+            
+            if (needToSave)
+                [UIImagePNGRepresentation(image) writeToFile:filePath atomically:NO];
+            
             completionBlock(success,image);
         }];
     }

@@ -54,7 +54,7 @@
     cell.artistLabel.text = track.author.username;
     cell.currentModelObject = track;
     
-    [[CHLImageProvider defaultProvider] imageWithURL:track.waveFormURL scale:[self waveFormScaleFactor] completionBlock:^(BOOL success, UIImage *image) {
+    [[CHLImageProvider defaultProvider] imageWithURL:track.waveFormURL scale:[self waveFormScaleFactor] crop:YES completionBlock:^(BOOL success, UIImage *image) {
         if (success && cell.currentModelObject == track) {
             cell.waveImageView.image = image;
             cell.waveImageView.backgroundColor = [UIColor orangeColor];

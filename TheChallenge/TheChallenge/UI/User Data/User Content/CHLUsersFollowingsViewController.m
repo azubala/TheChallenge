@@ -29,7 +29,7 @@
     cell.textLabel.text = userObject.username;
     cell.currentModelObject = userObject;
     
-    [[CHLImageProvider defaultProvider] imageWithURL:userObject.avatarURL scale:1.0f completionBlock:^(BOOL success, UIImage *image) {
+    [[CHLImageProvider defaultProvider] imageWithURL:userObject.avatarURL scale:1.0f crop:NO completionBlock:^(BOOL success, UIImage *image) {
         if (success && cell.currentModelObject == userObject) {
             cell.imageView.image = image;
             [cell setNeedsDisplay];
